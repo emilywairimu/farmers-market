@@ -87,7 +87,7 @@ form.addEventListener('submit', (event) => {
 
   }
 });
-
+// Adds an event listener to an input field
 searchField.addEventListener('input', () => {
   if (searchField.value.trim() !== '') {
     searchField.classList.remove('is-invalid');
