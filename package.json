@@ -4,10 +4,14 @@
   "description": "## farmers grocery Store This is a simple web application that allows farmers to browse and purchase groceries. The application provides a list of groceries that can be searched using a search field, and users can add products to their cart and proceed to checkout.",
   "main": "script.js",
   "scripts": {
-    "start":"npm start",
+    "start": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "json-serve": "^0.1.0"
+  }
 }
