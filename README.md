@@ -8,8 +8,7 @@ This is a simple web application that allows farmers to browse and purchase groc
 ### User interface
 To use the application, simply open the index.html file in a web browser. You will be presented with a list of groceries. You can search for groceries by clicking on the search icon in the top-right corner of the page and entering a search term. To add an item to the cart, simply click the "Add to Cart" button below the product image. You can view your cart by clicking on the cart icon in the top-right corner of the page. To checkout, click the "Checkout" button and fill out the form with your details and payment information.
 
-### information layout
-Technologies Used
+### Technologies Used
 The application was built using the following technologies:
 HTML
 CSS
