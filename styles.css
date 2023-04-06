@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     
+    
 }
 
 /* main */
@@ -114,7 +115,7 @@ p {
   }
 }
 
-/* search form  */
+
 
 .search-form {
   display: flex;
