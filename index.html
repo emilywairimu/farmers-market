@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+
+  </head>
+  <body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-basket-shopping"></i>Grocery</a>
+        <div class="icons">
+            <a href="#tab1"><div class="fas fa-home" id="menu-btn"></div></a>
+            <a href="#tab2"><div class="fas fa-search" id="search-btn"></div></a>
+            <a href="#tab3"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+            <!-- <div class="fas fa-user" id="login-btn"></div> -->
+        </div>
+    </header>
+    <div class="content">
+      <h2>List of Groceries</h2>
+    
+      <div class="tabview">
+        
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+            <div id="loading-text">Loading data...</div>
+            
+        
+                    <div id="row" class="row"> </div>
+                    
+
+            </div>
+           
+          <div class="tab-pane" id="tab2">
+                <form class="search-form mt-20">
+                    <div class="form-group">
+                    <label for="search-field">Search</label>
+                    <input type="text" id="search-field" class="form-control" placeholder="Enter your search term">
+                    <div class="invalid-feedback">Please enter a search term</div>
+                    </div>
+                    <button type="submit" class="custom-btn ">Search</button>
+                </form>
+                <div id="loading-text-search">Loading data...</div>
+                <div id="rowsearch" class="rowsearch mt-20"></div>
+                
+          </div>
+          <div class="tab-pane" id="tab3">
+            <div div class="cart-cont"></div>
+
+            <div class="centered-form">
+                <div id="checkout-form" class="hidden">
+                  <h2>Checkout Form</h2>
+                  <form>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name"><br>
+              
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br>
+              
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"></textarea><br>
+              
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number"><br>
+              
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY"><br>
+              
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv"><br>
+                            
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+              </div>
+            <div id="cart-container" class="cart-container">
+                <div class="products-container"></div>
+                <!-- <a href="#" class="btn">checkout</a> -->
+            </div>
+
+            <button id="checkout-btn" class="custom-btn">Checkout</button>  
+
+              
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+ 
+  </body>
+  <script src="script.js"></script>
+</html>
