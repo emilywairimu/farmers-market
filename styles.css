@@ -1,0 +1,399 @@
+/* Font definition */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600&display=swap');
+*{
+    font-family: 'Alkatra', cursive;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+/* main */
+
+/* header */
+
+.header{
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
+
+.header .logo{
+  color: black;
+  font-size: 200%;
+  font-weight: bolder;
+}
+
+
+.header .icons div{
+  background: white;
+  color: black;
+  font-size: 2rem;
+  margin-right: 3rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  border-radius: .5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.header .icons div:hover{
+  background: orange;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  h2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content > div {
+    flex-basis: calc(90% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+/* search form  */
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  transition: all 0.2s ease-out;
+}
+
+.form-group input {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease-out;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label {
+  top: -35px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.form-group .invalid-feedback {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #dc3545;
+}
+
+.form-group input.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-group input.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.custom-btn {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: orange;
+  transition: all 0.3s;
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid orange;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* start tabview */
+
+.tabview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .tab-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .tab-nav li {
+    margin-right: 10px;
+  }
+  .tab-nav li a {
+    display: block;
+    padding: 10px;
+    background-color: #eee;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px 5px 0 0;
+  }
+  .tab-nav li.active a {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+  }
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 0 5px 5px 5px;
+  }
+  .tab-pane {
+    display: none;
+  }
+  .tab-pane.active {
+    display: block;
+  }
+
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.item {
+    width: 95%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item h3 {
+    margin: 1rem 0;
+}
+
+.item p {
+    margin-bottom: 1rem;
+}
+
+.item button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.item button:hover {
+    background-color: #666;
+}
+/* end tabview */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.rowsearch{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.col {
+  flex-basis: calc(20% - 20px);
+  background-color: #ebebeb;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.box img {
+  width: 5%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.hidden {
+  display: none;
+}
+.centered-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#checkout-form {
+  width: 400px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+#checkout-form h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+#checkout-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#checkout-form input[type="text"],
+#checkout-form input[type="date"],
+#checkout-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+#checkout-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: #4285f4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#checkout-form input[type="submit"]:hover {
+  background-color: #2d73dd;
+}
+
+#checkout-form input[type="submit"]:active {
+  background-color: #1a50aa;
+  outline: none;
+}
